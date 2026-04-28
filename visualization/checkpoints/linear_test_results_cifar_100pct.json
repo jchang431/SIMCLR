@@ -1,0 +1,22 @@
+{
+  "avg_accuracy": 86.15,
+  "avg_loss": 0.3961,
+  "per_class_accuracy": {
+    "airplane": 89.5,
+    "automobile": 94.6,
+    "bird": 74.8,
+    "cat": 66.5,
+    "deer": 84.8,
+    "dog": 77.8,
+    "frog": 93.1,
+    "horse": 90.0,
+    "ship": 94.5,
+    "truck": 95.9
+  },
+  "experiment": "simclr_linear_eval_frozen_encoder",
+  "label_pct": 100,
+  "encoder": "frozen",
+  "trainable": "classifier_only",
+  "evaluated_checkpoint": "./checkpoints/simclr_linear_cifar_100pct_best.pth",
+  "confusion_matrix_path": "./checkpoints/cm_simclr_linear_cifar_100pct.png"
+}

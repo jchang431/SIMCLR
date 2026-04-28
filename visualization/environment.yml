@@ -1,0 +1,14 @@
+name: cs7643-a5
+channels:
+  - defaults
+dependencies:
+  - python==3.10
+  - matplotlib
+  - tqdm
+  - jupyter
+  - pip
+  - pip:
+     - torch==2.7.1
+     - notebook
+     - numpy
+

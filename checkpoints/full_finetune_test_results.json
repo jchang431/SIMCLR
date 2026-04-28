@@ -1,0 +1,18 @@
+{
+  "avg_accuracy": 84.06,
+  "avg_loss": 0.4876,
+  "per_class_accuracy": {
+    "airplane": 90.1,
+    "automobile": 96.2,
+    "bird": 72.5,
+    "cat": 55.0,
+    "deer": 85.0,
+    "dog": 71.3,
+    "frog": 93.0,
+    "horse": 89.8,
+    "ship": 93.8,
+    "truck": 93.9
+  },
+  "experiment": "simclr_full_finetune",
+  "trainable_encoder": "full_encoder"
+}

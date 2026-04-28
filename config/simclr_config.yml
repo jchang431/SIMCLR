@@ -1,0 +1,47 @@
+# Config for linear Eval
+data:
+  dataset: CIFAR
+  percent: 0.1
+  
+  # Imbalanced split for linear eval. Set to one of:
+  #   difficulty       -> 4500 labeled, difficulty-weighted (hard classes get more)
+  #   difficulty_1pct  ->  450 labeled, same pattern at 1% scale
+  #   lt_if10          -> 4492 labeled, exponential long-tail (imbalance factor 10)
+  #   lt_if10_1pct     ->  446 labeled, same tail at 1% scale
+  #   lt_if10_25pct    -> 11236 labeled, long-tail IF=10 at 25% scale
+  #   lt_if50          -> 4476 labeled, exponential long-tail (imbalance factor 50)
+  # Leave as null (or omit) to use the standard percent-based split instead.
+  imbalanced_split: null
+
+train:
+  batch_size: 32
+  lr: 0.001
+  n_epochs: 100
+  num_workers: 12 # change this based on number of cores on your CPU. 4 is sufficient for 1 gpu. If unsure leave at 1.  
+
+network:
+  proj_dim: 128 # TODO: Implement
+
+optimizer:
+  weight_decay: 0.00001 #0.000001 #0.001
+  momentum: 0.9
+
+simclr:
+  temperature: 0.5
+
+# # Pretrain
+# data:
+#   dataset: CIFAR
+#   percent: 1
+# train:
+#   batch_size: 256
+#   lr: 0.0005
+#   n_epochs: 400
+#   num_workers: 4 # change this based on number of cores on your CPU. 4 is sufficient for 1 gpu. If unsure leave at 1.  
+# network:
+#   proj_dim: 128 # TODO: Implement
+# optimizer:
+#   weight_decay: 0.00001 #0.000001 #0.001
+#   momentum: 0.9
+# simclr:
+#   temperature: 0.5

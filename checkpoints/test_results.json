@@ -1,0 +1,16 @@
+{
+  "avg_accuracy": 84.3,
+  "avg_loss": 0.472,
+  "per_class_accuracy": {
+    "airplane": 86.7,
+    "automobile": 95.0,
+    "bird": 69.1,
+    "cat": 61.1,
+    "deer": 84.3,
+    "dog": 76.7,
+    "frog": 92.7,
+    "horse": 88.0,
+    "ship": 94.5,
+    "truck": 94.9
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "avg_accuracy": 79.74,
+  "avg_loss": 0.8518,
+  "per_class_accuracy": {
+    "airplane": 87.4,
+    "automobile": 94.8,
+    "bird": 55.7,
+    "cat": 54.8,
+    "deer": 76.6,
+    "dog": 66.3,
+    "frog": 93.0,
+    "horse": 81.0,
+    "ship": 93.9,
+    "truck": 93.9
+  },
+  "experiment": "simclr_partial_finetune_layer4",
+  "label_pct": 1,
+  "trainable_encoder": "layer4_only",
+  "evaluated_checkpoint": "./checkpoints/simclr_partialft_cifar_1pct_best.pth",
+  "confusion_matrix_path": "./checkpoints/cm_simclr_partialft_cifar_1pct.png"
+}
